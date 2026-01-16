@@ -16,3 +16,120 @@
     --title-color: #131313;
     --text-color: #727272;
 }
+
+/* Shared styles  */
+.container{
+    width: 71%;
+    margin: 0 auto;
+}
+
+.section-title .title-details{
+    margin: 30px 0;
+    line-height: 26px;
+    color: var(--text-color);
+}
+
+.btn-primary{
+    padding: 8px 16px;
+    background-color: var(--bg-btn);
+    outline: none;
+    border: 1px solid var(--bg-btn);
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-primary:hover{
+    color: var(--bg-btn);
+    background-color: transparent;
+}
+
+/* header section styles  */
+#header{
+    background-color: var(--bg-primary);
+    padding: 50px 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .logo{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+#navbar .nav-links{
+    display: flex;
+    gap: 50px;
+}
+
+#navbar .nav-links a{
+    font-size: 1.1rem;
+    color: #424242;
+}
+
+#banner{
+    padding: 30px 0;
+}
+
+#banner .section-title{
+    max-width: 862px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#banner .section-title .title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+#banner .banner-img img{
+    width: 100%;
+}
+
+/* tablet screen responsiveness  */
+@media screen and (min-width:576px) and (max-width:992px){
+    .container{
+        width: 90%;
+    }
+    #navbar{
+        flex-direction: column;
+    }
+    #navbar .logo{
+        text-align: center;
+    }
+    #navbar .nav-links{
+        gap: 20px;
+    }
+    #banner .section-title .title{
+        font-size: 3rem;
+    }
+    #banner{
+    padding: 10px 0;
+}
+}
+
+/* Mobile screen responsive design  */
+@media screen and (max-width: 576px){
+    #navbar .nav-links{
+        gap: 5px;
+    }
+    #navbar .nav-links a{
+        font-size: 0.75rem;
+    }
+    #banner .section-title .title{
+        font-size: 3rem;
+    }
+    #banner{
+    padding: 10px 0;
+}
+}
