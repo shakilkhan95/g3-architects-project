@@ -191,7 +191,8 @@
     margin-bottom: 130px;
 }
 
-.facts-section-title .title-details{
+.facts-section-title .title-details,
+#sponsor .title-details{
     max-width: 542px;
 }
 
@@ -219,6 +220,27 @@
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text-color);
+}
+
+/* Sponsors section styles  */
+#sponsor {
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+#sponsor .title-details{
+    margin: 50px auto;
+
+}
+
+.sponsors-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sponsors-logo img{
+    filter: grayscale(100%);
 }
 
 /* tablet screen responsiveness  */
@@ -255,6 +277,12 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 80px;
+    }
+
+    .sponsors-logo{
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
     }
 }
 
