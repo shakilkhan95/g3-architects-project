@@ -324,4 +324,11 @@
     .features-img-container button .year{
     font-size: 2rem;
     }
+
+    #footer{
+        margin-bottom: 50px;
+    }
+    #footer .copyright-message{
+        font-size: .8rem;
+    }
 }
