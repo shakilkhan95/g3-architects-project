@@ -23,7 +23,7 @@
     margin: 0 auto;
 }
 
-.section-title .title-details{
+.title-details{
     margin: 30px 0;
     line-height: 26px;
     color: var(--text-color);
@@ -122,12 +122,77 @@
     flex-basis: 50%;
 }
 
+/* features section styles  */
+#features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 54px;
+    margin-bottom: 130px;
+}
+
+.features-content{
+    flex-basis: 50%;
+}
+
+.features-content .section-title .title{
+    padding-left: 20px;
+    border-left: 3px solid var(--bg-btn);
+}
+
+.features-card{
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.features-card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.features-card .title-details{
+    margin: 10px 0;
+    line-height: 15px;
+}
+
+.features-img-container{
+    flex-basis: 50%;
+}
+
+.features-img-container .img img{
+    width: 100%;
+    margin-left: 90px;
+}
+
+.features-img-container button{
+    padding: 20px 30px;
+    background-color: var(--bg-btn);
+    border: 1px solid var(--bg-btn);
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-top: -200px;
+}
+
+.features-img-container button .year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.features-img-container button .experience{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 /* tablet screen responsiveness  */
 @media screen and (max-width:992px){
     .container{
         width: 90%;
     }
-    #navbar{
+    #navbar
+    ,#features{
         flex-direction: column;
     }
     #navbar .logo{
@@ -146,13 +211,14 @@
     #team{
         flex-direction: column-reverse;
     }
+
+    .features-img-container .img img{
+    margin-left: 30px;
+}
 }
 
 /* Mobile screen responsive design  */
 @media screen and (max-width: 576px){
-    #navbar .nav-links{
-        gap: 5px;
-    }
     #navbar .nav-links a{
         font-size: 0.75rem;
     }
@@ -161,5 +227,17 @@
     }
     #banner{
     padding: 10px 0;
-}
+    }
+    
+    .features-img-container .img img{
+        margin-left: 0;
+    }
+    .features-img-container button{
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    }
+    .features-img-container button .year{
+    font-size: 2rem;
+    }
 }
